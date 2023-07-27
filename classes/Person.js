@@ -1,4 +1,5 @@
 class Person {
+    #health = 100;
     constructor(name, type, location){
         this.name = name;
         this.type = type;
@@ -15,6 +16,26 @@ class Person {
 
     updateY(newY){
         this.location[1] = newY;
+    }
+
+    getHealth(){
+        return `${this.#health} HP`
+    }
+
+    drinkPotion(healthToIncrease){
+        if(this.#health + healthToIncrease > 100){
+            this.#health = 100;
+        }else{
+            this.#health += healthToIncrease;
+        }
+    }
+
+    takeDamage(healthToDecrease){
+        if(this.#health - healthToDecrease < 0){
+            this.#health = 0;
+        }else{
+            this.#health -= healthToDecrease;
+        }
     }
 }
 
