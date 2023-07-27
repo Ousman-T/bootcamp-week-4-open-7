@@ -38,6 +38,16 @@ function main(){
 
 
     console.log(NPC.tellTime());
+
+
+    console.log('============= PRIVATE PROPERTIES GETTERS/SETTERS ==============');
+    console.log(person1.getHealth());
+
+    person1.drinkPotion(200);
+    console.log(person1.getHealth());
+
+    person1.takeDamage(200);
+    console.log(person1.getHealth());
 }
 
 main();
