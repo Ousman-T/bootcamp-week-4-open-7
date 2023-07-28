@@ -1,0 +1,23 @@
+{
+  "name": "bootcamp-week-4-open-7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ousman-T/bootcamp-week-4-open-7.git"
+  },
+  "author": "ousman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ousman-T/bootcamp-week-4-open-7/issues"
+  },
+  "homepage": "https://github.com/Ousman-T/bootcamp-week-4-open-7#readme",
+  "dependencies": {
+    "jest": "^29.6.2"
+  }
+}
